@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<!-- This file is part of stock_lot_csv module for Tryton.
+The COPYRIGHT file at the top level of this repository contains the full
+copyright notices and license terms. -->
+<tryton>
+    <data>
+        <!-- import csv start -->
+        <record model="ir.ui.view" id="import_csv_start">
+            <field name="model">import.csv.start</field>
+            <field name="type">form</field>
+            <field name="name">import_csv_start_view_form</field>
+        </record>
+        <record model="ir.action.wizard" id="act_import_csv">
+            <field name="name">Import CSV</field>
+            <field name="wiz_name">import.csv</field>
+        </record>
+        <menuitem
+            name="Import CSV"
+            parent="stock_lot.menu_lot_form"
+            action="act_import_csv"
+            id="menu_import_csv"
+            sequence="10"/>
+    </data>
+</tryton>
+    
