@@ -5,8 +5,6 @@ copyright notices and license terms. -->
 <form string="Import CSV File">
     <label name="archive"/>
     <field name="archive"/>
-    <label name="attachment"/>
-    <field name="attachment"/>
     <label name="character_encoding"/>
     <field name="character_encoding"/>
     <label name="header"/>

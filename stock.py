@@ -19,8 +19,6 @@ class ImportCSVStart(ModelView):
     'Import CSV start'
     __name__ = 'import.csv.start'
     archive = fields.Binary('Archive', required=True)
-    attachment = fields.Boolean('Attachment',
-        help='Attach CSV file after import.')
     character_encoding = fields.Selection([
             ('utf-8', 'UTF-8'),
             ('latin-1', 'Latin-1'),
