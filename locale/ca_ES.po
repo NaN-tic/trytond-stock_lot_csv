@@ -1,0 +1,87 @@
+#
+msgid ""
+msgstr "Content-Type: text/plain; charset=utf-8\n"
+
+msgctxt "field:import.csv.start,archive:"
+msgid "Archive"
+msgstr "Arxiu"
+
+msgctxt "field:import.csv.start,character_encoding:"
+msgid "Character Encoding"
+msgstr "Codificació de caracters"
+
+msgctxt "field:import.csv.start,header:"
+msgid "Headers"
+msgstr "Capçaleres"
+
+msgctxt "field:import.csv.start,id:"
+msgid "ID"
+msgstr "ID"
+
+msgctxt "field:import.csv.start,quote:"
+msgid "Quote"
+msgstr "Delimitador"
+
+msgctxt "field:import.csv.start,separator:"
+msgid "CSV Separator"
+msgstr "Separador CSV"
+
+msgctxt "help:import.csv.start,header:"
+msgid "Set this check box to true if CSV file has headers."
+msgstr "Marqueu aquesta casella si l'arxiu CSV té capçaleres."
+
+msgctxt "help:import.csv.start,quote:"
+msgid "Character to use as quote"
+msgstr "Caràcter a utilitzar com a delimitador"
+
+msgctxt "help:import.csv.start,separator:"
+msgid "Archive CSV Separator"
+msgstr "Separador de l'arxiu CSV"
+
+msgctxt "model:import.csv.start,name:"
+msgid "Import CSV start"
+msgstr "Inici d'importació CSV"
+
+msgctxt "model:ir.action,name:act_import_csv"
+msgid "Import CSV"
+msgstr "Importació CSV"
+
+msgctxt "model:ir.ui.menu,name:menu_import_csv"
+msgid "Import CSV"
+msgstr "Importació CSV"
+
+msgctxt "selection:import.csv.start,character_encoding:"
+msgid "Latin-1"
+msgstr "Latin-1"
+
+msgctxt "selection:import.csv.start,character_encoding:"
+msgid "UTF-8"
+msgstr "UTF-8"
+
+msgctxt "selection:import.csv.start,separator:"
+msgid "Comma"
+msgstr "Coma"
+
+msgctxt "selection:import.csv.start,separator:"
+msgid "Semicolon"
+msgstr "Punt i coma"
+
+msgctxt "selection:import.csv.start,separator:"
+msgid "Tabulator"
+msgstr "Tabulador"
+
+msgctxt "selection:import.csv.start,separator:"
+msgid "|"
+msgstr "|"
+
+msgctxt "view:import.csv.start:"
+msgid "Import CSV File"
+msgstr "Importa d'arxiu CSV"
+
+msgctxt "wizard_button:import.csv,start,archive:"
+msgid "Import File"
+msgstr "Importa arxiu"
+
+msgctxt "wizard_button:import.csv,start,end:"
+msgid "Cancel"
+msgstr "Cancel·la"
