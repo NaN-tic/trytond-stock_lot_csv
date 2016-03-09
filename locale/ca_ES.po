@@ -26,6 +26,10 @@ msgctxt "field:import.csv.start,separator:"
 msgid "CSV Separator"
 msgstr "Separador CSV"
 
+msgctxt "help:import.csv.start,archive:"
+msgid "First column: product code. Second column: number lot"
+msgstr "Primera columna: codi producte. Segona columna: número lot"
+
 msgctxt "help:import.csv.start,header:"
 msgid "Set this check box to true if CSV file has headers."
 msgstr "Marqueu aquesta casella si l'arxiu CSV té capçaleres."
