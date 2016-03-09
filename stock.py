@@ -18,7 +18,8 @@ logger = getLogger(__name__)
 class ImportCSVStart(ModelView):
     'Import CSV start'
     __name__ = 'import.csv.start'
-    archive = fields.Binary('Archive', required=True)
+    archive = fields.Binary('Archive', required=True,
+        help='First column: product code. Second column: number lot')
     character_encoding = fields.Selection([
             ('utf-8', 'UTF-8'),
             ('latin-1', 'Latin-1'),
@@ -88,7 +89,7 @@ class ImportCSV(Wizard):
 
         lot = Lot.__table__()
         product = Product.__table__()
-        cursor.execute(*lot
+        cursor.execute(*lotr
             .join(product, 'LEFT', condition=(lot.product == product.id))
             .select(
                 product.code.as_('code'),
