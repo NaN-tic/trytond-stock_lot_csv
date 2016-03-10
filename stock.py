@@ -5,7 +5,7 @@ from StringIO import StringIO
 from csv import reader
 from logging import getLogger
 from trytond.pool import Pool
-
+from trytond.tools import cursor_dict
 from trytond.model import fields, ModelView
 from trytond.transaction import Transaction
 from trytond.wizard import Button, StateTransition, StateView, Wizard
@@ -96,7 +96,7 @@ class ImportCSV(Wizard):
                 lot.number.as_('lot'),
                 )
             )
-        lots = [(p['code'], p['lot']) for p in cursor.dictfetchall()]
+        lots = [(p['code'], p['lot']) for p in cursor_dict(cursor)]
         products = {p.code: p for p in Product.search([])}
 
         if has_header:
