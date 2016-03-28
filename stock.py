@@ -89,7 +89,7 @@ class ImportCSV(Wizard):
 
         lot = Lot.__table__()
         product = Product.__table__()
-        cursor.execute(*lotr
+        cursor.execute(*lot
             .join(product, 'LEFT', condition=(lot.product == product.id))
             .select(
                 product.code.as_('code'),
