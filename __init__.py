@@ -2,14 +2,13 @@
 # The COPYRIGHT file at the top level of this repository contains the full
 # copyright notices and license terms.
 from trytond.pool import Pool
-
-from .stock import *
+from . import stock
 
 
 def register():
     Pool.register(
-        ImportCSVStart,
+        stock.ImportCSVStart,
         module='stock_lot_csv', type_='model')
     Pool.register(
-        ImportCSV,
+        stock.ImportCSV,
         module='stock_lot_csv', type_='wizard')
